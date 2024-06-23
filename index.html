@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body, html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('backgroundlaranja.webp') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .message-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%;
+            width: 50%;
+        }
+
+        .message-box button {
+            background-color: #FF4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .message-box button:hover {
+            background-color: #F50057;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h1>PARABÉNS GIULIA!</h1>
+        <p>espero que esteja completamente cachaçada nesse momento, tudo de bom pra ti, beijão</p>
+        <button onclick="playAudio()">Se quiser ouvir minha linda voz, clica aqui giulinda</button>
+        <audio id="prankAudio" src="gemidao.mp4" preload="auto"></audio>
+    </div>
+
+    <script>
+        function playAudio() {
+            document.getElementById('prankAudio').play();
+        }
+    </script>
+</body>
+</html>
